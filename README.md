@@ -7,13 +7,13 @@
 ### Rozdělení úkolů
  - xvalek15 (testy a dokumentace)
  - xpanku00 (matematické operace)
- - xpiwow00 (profiling instalátor)
+ - xpiwow00 (profiling a instalátor)
  - xsesta05 (GUI)
  
 ### Komunikační kanály a jejich pravidla
 Budeme používat:
- - **Discord** (pro hlasové konference)
  - **Messenger skupina** (hlavní komunikační kanál)
+ - **Discord** (pro hlasové konference)
  
 ### Zvolený systém pro správu verzí
  - Git a [github](https://github.com/Rattlesnek/IVS)
