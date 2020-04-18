@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculator2020" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="DisplayOp1Ope" Text=""  Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" BorderBrush="White" Grid.ColumnSpan="4" FontSize="16"/>
+        <TextBox x:Name="Display" Grid.Row="1" Grid.Column="0" Text="" TextWrapping="Wrap" VerticalContentAlignment="Bottom" Grid.ColumnSpan="4" HorizontalContentAlignment="Right" FontSize="18"/>
+        <Button x:Name="Btn0" Content="0" Grid.Column="0" Grid.Row="6" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn1" Content="1" Grid.Column="0" Grid.Row="5" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn2" Content="2" Grid.Column="1" Grid.Row="5" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn3" Content="3" Grid.Column="2" Grid.Row="5" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn4" Content="4" Grid.Column="0" Grid.Row="4" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn5" Content="5" Grid.Column="1" Grid.Row="4" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn6" Content="6" Grid.Column="2" Grid.Row="4" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn7" Content="7" Grid.Column="0" Grid.Row="3" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20" />
+        <Button x:Name="Btn8" Content="8" Grid.Column="1" Grid.Row="3" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="Btn9" Content="9" Grid.Column="2" Grid.Row="3" Click="BtnNum_Click" Background="#FF4E4B4B" FontSize="20"/>
+        <Button x:Name="BtnDot" Content="." Grid.Column="1" Grid.Row="6" Click="BtnDot_Click" Background="#FF4E4B4B" FontSize="20"/>
+
+        <Button x:Name="BtnAdd" Content="+"  Grid.Column="0" Grid.Row="2"  Click="BtnOperation_Click" FontSize="20"/>
+        <Button x:Name="BtnSub" Content="-" Grid.Column="1" Grid.Row="2" Click="BtnOperation_Click" FontSize="20"/>
+        <Button x:Name="BtnMul" Content="*" Grid.Column="2" Grid.Row="2" Click="BtnOperation_Click" FontSize="20"/>
+        <Button x:Name="BtnDiv" Content="/" Grid.Column="3" Grid.Row="2" Click="BtnOperation_Click" FontSize="20"/>
+        <Button x:Name="BtnExpo" Content="^x" Grid.Column="4" Grid.Row="2" Click="BtnOperation_Click" FontSize="20"/>
+        <Button x:Name="BtnRoot" Content="^1/" Grid.Column="4" Grid.Row="3" Click="BtnOperation_Click" FontSize="20"/>
+        <Button x:Name="BtnFact" Content="!" Grid.Column="3" Grid.Row="3" Click="BtnFact_Click" FontSize="20"/>
+        <Button x:Name="BtnSin" Content="sin()" Grid.Column="4" Grid.Row="4" Click="BtnSin_Click" FontSize="20"/>
+        <Button x:Name="BtnTan" Content="tan()" Grid.Column="3" Grid.Row="4" Click="BtnTan_Click" FontSize="20"/>
+
+        <Button x:Name="BtnResult" Content="=" Grid.Column="3" Grid.Row="6" Click="BtnResult_Click" Grid.ColumnSpan="2" FontSize="20"/>
+        <Button x:Name="BtnBackSpace" Content="BackSpace" Grid.Column="4" Grid.Row="1" Click="BtnBackSpace_Click" FontSize="20"/>
+        <Button x:Name="BtnCe" Content="CE" Grid.Column="4" Grid.Row="0" Click="BtnCe_Click" FontSize="20"/>
+        <Button x:Name="BtnPi" Content="3.14159265" Grid.Column="2" Grid.Row="6"  Background="#FF4E4B4B" FontSize="20" Click="BtnPi_Click"/>
 
     </Grid>
 </Window>
