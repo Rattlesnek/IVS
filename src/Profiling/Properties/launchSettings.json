@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Profiling": {
+      "commandName": "Project",
+      "commandLineArgs": "< C:\\Users\\piwow\\source\\repos\\IVS2\\src\\Profiling\\testData\\10_rand_num.txt.txt"
+    }
+  }
+}
