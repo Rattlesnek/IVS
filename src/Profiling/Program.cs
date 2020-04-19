@@ -38,24 +38,6 @@ namespace Profiling
         /// </param>
         /// <returns>Sample standard deviation of the numbers in the list.</returns>
         static double CalcSampleStandardDeviation(List<double> numbers) {
-        /*    
-            int N = numbers.Count;
-            
-            double sum = 0;
-            numbers.ForEach(i => sum = MathOp.Add(i, sum));
-            
-            double mean = sum / N;
-            
-            double squaredSum = 0;
-            numbers.ForEach(i => squaredSum = MathOp.Add(MathOp.Exponentiate(i, 2), squaredSum));
-
-            
-            double numerator = squaredSum - N * MathOp.Exponentiate(mean, 2);
-            double denominator = N - 1;
-
-            return MathOp.NthRoot(numerator / denominator, 2);
-            
-        */
             int N = numbers.Count;
             double sum = 0;
             for(int i = 0; i < N; i++) {
@@ -73,18 +55,41 @@ namespace Profiling
             double numerator = squaredSum - N * MathOp.Exponentiate(mean, 2);
             double denominator = N - 1;
 
-            return MathOp.NthRoot(numerator/ denominator, 2);
+            return MathOp.NthRoot(numerator / denominator, 2);
         }
 
         static void Main(string[] args)
         {
-            List<double> numbers = getNumbers();
+            List<double> numbers = null;
 
-            double sampleStandardDeviation = CalcSampleStandardDeviation(numbers);
+            try
+            {
+                numbers = getNumbers();
+            }
+            catch
+            {
+                Console.WriteLine("Error while trying to parse input data!");
+                Console.WriteLine("Please check that numbers are in following format: ");
+                Console.WriteLine("<number>\\n");
+                Console.WriteLine("<number>\\n");
+                Console.WriteLine("...");
+                Console.WriteLine("<number>\\n");
+                Console.WriteLine("EOF");
+
+                return;
+            }
+
+            double sampleStandardDeviation = 0;
+            try
+            {
+                sampleStandardDeviation = CalcSampleStandardDeviation(numbers);
+            }
+            catch
+            {
+                Console.WriteLine("Error while trying to calculate sample standard deviation.");
+            }
 
             Console.WriteLine(sampleStandardDeviation);
-            Console.WriteLine("Ukamanga");
-            var enter = Console.ReadLine();
         }
     }
 }
