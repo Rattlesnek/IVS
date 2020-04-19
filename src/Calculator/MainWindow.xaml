@@ -42,7 +42,7 @@
         <Button x:Name="BtnMul" Content="*" Grid.Column="2" Grid.Row="2" Click="BtnOperation_Click" FontSize="20"/>
         <Button x:Name="BtnDiv" Content="/" Grid.Column="3" Grid.Row="2" Click="BtnOperation_Click" FontSize="20"/>
         <Button x:Name="BtnExpo" Content="^x" Grid.Column="4" Grid.Row="2" Click="BtnOperation_Click" FontSize="20"/>
-        <Button x:Name="BtnRoot" Content="^1/" Grid.Column="4" Grid.Row="3" Click="BtnOperation_Click" FontSize="20"/>
+        <Button x:Name="BtnRoot" Content="^1/x" Grid.Column="4" Grid.Row="3" Click="BtnOperation_Click" FontSize="20"/>
         <Button x:Name="BtnFact" Content="!" Grid.Column="3" Grid.Row="3" Click="BtnFact_Click" FontSize="20"/>
         <Button x:Name="BtnSin" Content="sin()" Grid.Column="4" Grid.Row="4" Click="BtnSin_Click" FontSize="20"/>
         <Button x:Name="BtnTan" Content="tan()" Grid.Column="3" Grid.Row="4" Click="BtnTan_Click" FontSize="20"/>

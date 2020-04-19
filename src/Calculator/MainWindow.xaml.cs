@@ -58,6 +58,12 @@ namespace Calculator
             }
 
         }
+
+        /// <summary>
+        /// Add Pí value to operand.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnPi_Click(object sender, RoutedEventArgs e)
         {
             string num = "";
@@ -128,12 +134,12 @@ namespace Calculator
         {
             if (operation == "")
             {
-                operand1Txt = operand1Txt.Remove(operand1Txt.Length - 1);
+                operand1Txt = (operand1Txt.Length < 1) ? "" : operand1Txt.Remove(operand1Txt.Length - 1);
                 Display.Text = operand1Txt;
             }
             else
             {
-                operand2Txt = operand2Txt.Remove(operand2Txt.Length - 1);
+                operand2Txt = (operand2Txt.Length < 1) ? "" : operand2Txt.Remove(operand2Txt.Length - 1);
                 Display.Text = operand2Txt;
             }
         }
@@ -247,6 +253,9 @@ namespace Calculator
             operand1Txt = result.ToString();
         }
 
+        /// <summary>
+        /// Function for compution of basic functions.
+        /// </summary>
         private void Compute()
         {
             if (operand1Txt == "" || operand2Txt == "") return;
@@ -272,7 +281,7 @@ namespace Calculator
                 case "^x":
                     result = MathOp.Exponentiate(operand1, exp);
                     break;
-                case "^1/":
+                case "^1/x":
                     result = MathOp.NthRoot(operand1, exp);
                     break;
                 default:
@@ -283,6 +292,10 @@ namespace Calculator
             Display.Text = result.ToString();
 
         }
+
+        /// <summary>
+        /// Function clears operands and operation.
+        /// </summary>
         private void Clean()
         {
             operand1 = 0;
@@ -293,6 +306,11 @@ namespace Calculator
             DisplayOp1Ope.Text = "";
         }
 
+        /// <summary>
+        /// Function clears whole calculator.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCe_Click(object sender, RoutedEventArgs e)
         {
             Clean();
