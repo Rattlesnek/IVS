@@ -1,0 +1,12 @@
+Datum a čas:      2020-04-29 22:23:50
+Způsob odevzdání: Odevzdáváme jako projekt C#
+
+Soubory:
+--------
+hodnoceni.txt      = Hodnoceni clenu tymu
+dokumentace.pdf    = Manual
+src/Calculator/*   = Obsahuje zdrojove soubory pro GUI
+src/MathLib/*      = Obsahuje zdrojove soubory matematicke knihovny
+src/MathLibTests/* = Obsahuje zdrojove soubory testu matematicke knihovny
+src/Profiling/*    = Obsahuje zdrojove soubory profilingu
+src/Setup/*        = Obsahuje zdrojove soubory instalatoru
