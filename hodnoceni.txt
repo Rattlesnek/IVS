@@ -1,0 +1,4 @@
+xpanku00 100 (functions for mathematical operations)
+xsesta05 100 (GUI)
+xpiwow00 100 (profiling, installer)
+xvalek154 100 (tests, documentation)
